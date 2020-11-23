@@ -31,7 +31,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.takvim = new System.Windows.Forms.MonthCalendar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.grpKatagori = new System.Windows.Forms.GroupBox();
+            this.Aciklama = new System.Windows.Forms.Label();
+            this.txtDiger = new System.Windows.Forms.TextBox();
             this.rdbDiger = new System.Windows.Forms.RadioButton();
             this.rdbEvgiderleri = new System.Windows.Forms.RadioButton();
             this.rdbMarket = new System.Windows.Forms.RadioButton();
@@ -41,12 +44,10 @@
             this.rdbRestoran = new System.Windows.Forms.RadioButton();
             this.rdbKiyafet = new System.Windows.Forms.RadioButton();
             this.rdbSaglik = new System.Windows.Forms.RadioButton();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.txtDiger = new System.Windows.Forms.TextBox();
-            this.Aciklama = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnOnay = new System.Windows.Forms.Button();
             this.LBLozET = new System.Windows.Forms.Label();
             this.txtOzet = new System.Windows.Forms.TextBox();
             this.txtaciklama = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.CBSecim = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnOnay = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnOzetGetir = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -93,6 +93,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gider Özetleri";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(9, 17);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(266, 160);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
             // grpKatagori
             // 
             this.grpKatagori.Controls.Add(this.Aciklama);
@@ -112,6 +121,25 @@
             this.grpKatagori.TabIndex = 8;
             this.grpKatagori.TabStop = false;
             this.grpKatagori.Text = "Katagoriler";
+            // 
+            // Aciklama
+            // 
+            this.Aciklama.AutoSize = true;
+            this.Aciklama.Location = new System.Drawing.Point(87, 178);
+            this.Aciklama.Name = "Aciklama";
+            this.Aciklama.Size = new System.Drawing.Size(56, 13);
+            this.Aciklama.TabIndex = 10;
+            this.Aciklama.Text = "Açıklama :";
+            this.Aciklama.Visible = false;
+            // 
+            // txtDiger
+            // 
+            this.txtDiger.Location = new System.Drawing.Point(159, 174);
+            this.txtDiger.Name = "txtDiger";
+            this.txtDiger.Size = new System.Drawing.Size(100, 20);
+            this.txtDiger.TabIndex = 9;
+            this.txtDiger.Visible = false;
+            this.txtDiger.TextChanged += new System.EventHandler(this.txtDiger_TextChanged);
             // 
             // rdbDiger
             // 
@@ -222,15 +250,6 @@
             this.rdbSaglik.UseVisualStyleBackColor = true;
             this.rdbSaglik.CheckedChanged += new System.EventHandler(this.rdbSaglik_CheckedChanged);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(9, 17);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(266, 160);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.listBox2);
@@ -249,26 +268,6 @@
             this.listBox2.Size = new System.Drawing.Size(266, 199);
             this.listBox2.TabIndex = 0;
             // 
-            // txtDiger
-            // 
-            this.txtDiger.Location = new System.Drawing.Point(159, 174);
-            this.txtDiger.Name = "txtDiger";
-            this.txtDiger.Size = new System.Drawing.Size(100, 20);
-            this.txtDiger.TabIndex = 9;
-            this.txtDiger.Visible = false;
-            this.txtDiger.TextChanged += new System.EventHandler(this.txtDiger_TextChanged);
-            // 
-            // Aciklama
-            // 
-            this.Aciklama.AutoSize = true;
-            this.Aciklama.Enabled = false;
-            this.Aciklama.Location = new System.Drawing.Point(87, 178);
-            this.Aciklama.Name = "Aciklama";
-            this.Aciklama.Size = new System.Drawing.Size(56, 13);
-            this.Aciklama.TabIndex = 10;
-            this.Aciklama.Text = "Açıklama :";
-            this.Aciklama.Visible = false;
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.btnOnay);
@@ -285,6 +284,16 @@
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Harcama";
+            // 
+            // btnOnay
+            // 
+            this.btnOnay.Location = new System.Drawing.Point(198, 86);
+            this.btnOnay.Name = "btnOnay";
+            this.btnOnay.Size = new System.Drawing.Size(75, 23);
+            this.btnOnay.TabIndex = 7;
+            this.btnOnay.Text = "Onay";
+            this.btnOnay.UseVisualStyleBackColor = true;
+            this.btnOnay.Click += new System.EventHandler(this.btnOnay_Click);
             // 
             // LBLozET
             // 
@@ -360,16 +369,6 @@
             this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 12;
             this.label3.Text = "Bütçeniz :";
-            // 
-            // btnOnay
-            // 
-            this.btnOnay.Location = new System.Drawing.Point(198, 86);
-            this.btnOnay.Name = "btnOnay";
-            this.btnOnay.Size = new System.Drawing.Size(75, 23);
-            this.btnOnay.TabIndex = 7;
-            this.btnOnay.Text = "Onay";
-            this.btnOnay.UseVisualStyleBackColor = true;
-            this.btnOnay.Click += new System.EventHandler(this.btnOnay_Click);
             // 
             // textBox1
             // 

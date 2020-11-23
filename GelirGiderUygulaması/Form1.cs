@@ -60,9 +60,9 @@ namespace GelirGiderUygulaması
             else if (rdbEvgiderleri.Checked) sonuc = rdbEvgiderleri.Text;
             else
             {
-                if (rdbEglence.Checked)
+                if (rdbDiger.Checked)
                 {
-
+                    sonuc = rdbDiger.Text + " " + txtDiger.Text;
                 }
             }
             {
@@ -93,6 +93,17 @@ namespace GelirGiderUygulaması
 
         private void rdbDiger_CheckedChanged(object sender, EventArgs e)
         {
+           
+            if (rdbDiger.Checked)
+            {
+                Aciklama.Visible = true;
+                txtDiger.Visible = true;
+            }
+            else 
+            {
+                Aciklama.Visible = false;
+                txtDiger.Visible = false;
+            }
             IslemDetay();
         }
 
