@@ -1,0 +1,11 @@
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\bin\Debug\GelirGiderUygulaması.exe.config
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\bin\Debug\GelirGiderUygulaması.exe
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\bin\Debug\GelirGiderUygulaması.pdb
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.csprojAssemblyReference.cache
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.GelirGider.resources
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.Properties.Resources.resources
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.csproj.GenerateResource.cache
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.csproj.CoreCompileInputs.cache
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.exe
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.pdb
+C:\Users\NajjSum\source\repos\GelirGiderUygulaması\GelirGiderUygulaması\obj\Debug\GelirGiderUygulaması.Butce.resources
